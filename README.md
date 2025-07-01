@@ -75,17 +75,6 @@ This confirmed that the firewall successfully blocked Telnet traffic on port 23.
 
 ---
 
-### 🔹 4. (Optional) Allowed Inbound Traffic on Port 22 (SSH)
-
-Added an **allow rule** via PowerShell:
-```powershell
-New-NetFirewallRule -DisplayName "Allow SSH" -Direction Inbound -LocalPort 22 -Protocol TCP -Action Allow
-```
-
-This showed the ability to manage firewall rules programmatically.
-
----
-
 ### 🔹 5. Removed the Telnet Block Rule to Restore System
 
 Navigated to:
